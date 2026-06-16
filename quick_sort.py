@@ -2,10 +2,10 @@ def quick_sort(nums: list[int], first: int, last: int) -> None:
     if last >= first:
         return
 
-    pivot = partion(nums, first, last)
+    mid = partion(nums, first, last)
 
-    left = partion(nums, first, pivot - 1)
-    right = partion(nums, pivot + 1, last)
+    left = partion(nums, first, mid- 1)
+    right = partion(nums, mid + 1, last)
 
 
 def partion(nums: list[int], left: int, right: int):
