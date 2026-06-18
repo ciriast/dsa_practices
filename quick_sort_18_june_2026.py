@@ -20,7 +20,6 @@ def partion(nums: list[int], start_index: int, end_index: int) -> int:
 
     return i + 1
 
-
 my_list = [20, 10, 2, 6, 15, 78, 52, 11]
 quick_sort(my_list, 0, len(my_list) - 1)
 print(my_list)
