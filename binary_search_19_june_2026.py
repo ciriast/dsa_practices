@@ -2,7 +2,7 @@ def binary_search(nums: list[int], my_key: int) -> int:
     start = 0
     end = len(nums) - 1
 
-    while start < end:
+    while start <= end:
         middle = (start + end) // 2
 
         if nums[middle] == my_key:
@@ -16,4 +16,4 @@ def binary_search(nums: list[int], my_key: int) -> int:
     
     return -1
 
-print(binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 6))
+print(binary_search([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 1))
